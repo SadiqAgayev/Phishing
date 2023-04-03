@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > .header {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  height: 60%;
+  background-color: #f0f2f5;
+  padding: 72px 25% 112px;
+}
+
+/* ! header-left */
+
+.container > .header > .left {
+  padding-top: 20px;
+  width: 42%;
+}
+
+.container > .header > .left > .logo {
+  height: 106px;
+  margin: -28px;
+  padding: 112px 0 16px;
+}
+
+.container > .header > .left > p {
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 32px;
+  margin-top: 0;
+}
+
+/* ! header-right */
+
+.container > .header > .right {
+  padding-top: 20px;
+  width: 42%;
+}
+
+.container > .header > .right > form {
+  margin: 60px 0 16px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 15px 15px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > .header > .right > form > input {
+  height: 24px;
+  width: calc(100% - 30px);
+  font-size: 17px;
+  padding: 14px 16px;
+  margin-top: 12px;
+  border-radius: 7px;
+  border: 1px solid rgb(217, 212, 212);
+  outline: none;
+}
+
+.container > .header > .right > form > input:focus {
+  outline: 1px solid rgb(62, 62, 238);
+}
+
+.container > .header > .right > form > button.login {
+  background-color: #1877f2;
+  color: #fff;
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  margin-top: 16px;
+}
+
+.container > .header > .right > form > button.login + span {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+}
+
+.container > .header > .right > form hr {
+  width: 100%;
+  background-color: #dadde1;
+}
+
+.container > .header > .right > form > button.create {
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 48px;
+  padding: 0 16px;
+  background-color: #42b72a;
+  color: #fff;
+  width: 60%;
+  margin-top: 20px;
+}
+
+.footer {
+  width: 50%;
+  color: #8a8d91;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer .uiList {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  padding-bottom: 15px;
+}
+
+.footer .uiList li {
+  margin-left: 15px;
+}
+
+.footer .uiList li a {
+  text-decoration: none;
+  color: #8a8d91;
+  font-size: 14px;
+}
+
+.footer .mvl span {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 1700px) {
+  .header {
+    width: 65% !important;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .header {
+    width: 75% !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+    margin: 0 20px !important;
+  }
+  .header,
+  .left,
+  .right,
+  form {
+    width: 100% !important;
+  }
+  .left,
+  .right {
+    padding: 0 30px !important;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .container > .header {
+    padding-top: 0 !important;
+  }
+}
