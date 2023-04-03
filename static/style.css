@@ -85,6 +85,10 @@ body {
   margin-top: 16px;
 }
 
+.container > .header > .right > form > button.login:hover {
+  cursor: pointer;
+}
+
 .container > .header > .right > form > button.login + span {
   display: block;
   text-align: center;
